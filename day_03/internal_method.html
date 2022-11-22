@@ -94,17 +94,51 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
       const rootElement = document.querySelector(".root");
+      const welcome = "Welcome to 30 Days of React";
+      const title = "Getting Started React";
+      const subtitle = "JavaScript Library";
+      const author = {
+        firstName: "Abiyu",
+        lastName: "Nigussie",
+      };
+      const date = "Nov, 2022";
+
       const header = (
         <header>
           <div className="header-wrapper">
-            <h1>Welcome to 30 Days Of React</h1>
-            <h2>Getting Started React</h2>
-            <h3>JavaScript Library</h3>
-            <p>Abiyu Nigussie</p>
-            <small>Nov 22, 2022</small>
+            <h1>{welcome}</h1>
+            <h2>{title}</h2>
+            <h3>{subtitle}</h3>
+            <p>
+              {author.firstName} {author.lastName}
+            </p>
+            <small>Date: {date}</small>
           </div>
         </header>
       );
+
+      const numOne = 3;
+      const numTwo = 2;
+
+      const result = (
+        <div>
+          <p>
+            {numOne} + {numTwo} = {numOne + numTwo}
+          </p>
+        </div>
+      );
+
+      const yearBorn = 2003;
+      const currentYear = new Date().getFullYear();
+      const age = currentYear - yearBorn;
+      const personAge = (
+        <p>
+          {" "}
+          {author.firstName} {author.lastName} is {age} years old!
+        </p>
+      );
+      const techs = ["HTML", "CSS", "JavaScript"];
+      const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>);
       const main = (
         <main>
           <div className="main-wrapper">
@@ -115,25 +149,23 @@
               </strong>
               :
             </p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
+            <ul>{techsFormatted}</ul>
+            {result}
+            {personAge}
           </div>
         </main>
       );
-
+      const copyRight = "Copyright 2022";
       const footer = (
         <footer>
           <div className="footer-wrapper">
-            <p>Copyright 2022</p>
+            <p>{copyRight}</p>
           </div>
         </footer>
       );
 
       const app = (
-        <div class="root">
+        <div className="app">
           {header}
           {main}
           {footer}
