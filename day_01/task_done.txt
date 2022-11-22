@@ -1,0 +1,2 @@
+#1 I got pretty good idea  of what react is.
+#2 I set up my environment for react development
