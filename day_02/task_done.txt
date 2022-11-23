@@ -1,1 +1,0 @@
-#1 I have seen some Javascript concepts which would help me through learning React framework.
