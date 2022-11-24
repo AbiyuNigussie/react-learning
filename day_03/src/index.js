@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import profile from "./images/profile.jpg";
-import level_2 from "./components/Level_2/level_2.js";
+import level_2 from "./components/Level_2/level_2";
 import subscribe from "./components/Subscribe/subscribe";
+import userCard from "./components/UserCard/userCard";
 const welcome = "Welcome to 30 Days of React";
 const title = "Getting Started React";
 const subtitle = "JavaScript Library";
@@ -87,6 +88,7 @@ const app = (
       <Route path="/" element={home} />
       <Route path="/level-2" element={level_2} />
       <Route path="/subscribe" element={subscribe} />
+      <Route path="/userCard" element={userCard} />
       <Route />
     </Routes>
   </BrowserRouter>
