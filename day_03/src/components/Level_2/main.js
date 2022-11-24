@@ -8,10 +8,28 @@ const imgStyles = {
 };
 const main = (
   <main className="l2-main">
-    <img style={imgStyles} src={html} width="200" height="200" />
-    <img style={imgStyles} src={css} width="200" height="200" />
-    <img style={imgStyles} src={js} width="200" height="200" />
-    <img style={imgStyles} src={react} width="200" height="200" />
+    <img
+      style={imgStyles}
+      src={html}
+      width="200"
+      height="200"
+      alt={"htmlImage"}
+    />
+    <img
+      style={imgStyles}
+      src={css}
+      width="200"
+      height="200"
+      alt={"cssImage"}
+    />
+    <img style={imgStyles} src={js} width="200" height="200" alt={"jsImage"} />
+    <img
+      style={imgStyles}
+      src={react}
+      width="200"
+      height="200"
+      alt={"reactImage"}
+    />
   </main>
 );
 
